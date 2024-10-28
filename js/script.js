@@ -1,1 +1,1 @@
-new SimpleAnime()
+new SimpleAnime();
