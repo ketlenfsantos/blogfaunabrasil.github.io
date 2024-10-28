@@ -1,0 +1,55 @@
+
+
+.sidenav{
+    grid-area: sidenav ;
+    padding:30px;
+    margin-top: 20px;
+    
+  }
+
+  .sidenav li a {
+    display: flex;
+    justify-content: center;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 10px 30px auto;
+    padding: 20px;
+    box-shadow: 5px 5px 15px 0px rgba(6, 49, 17, 0.53);
+    border-radius: 20px;
+    transition: .2s ease-out;
+  }
+
+  .sidenav li img{
+    height: 100px;
+  }
+
+  .sidenav li a:hover{
+    background: rgba(0, 146, 68, 0.198);
+  }
+
+  @media (max-width:760px){
+/* 
+.sidenav {
+  overflow-x: auto ativa rolagem ;
+  web-kir-overflow-scrolling: touch;
+  ,s
+} */
+
+   .sidenav ul {
+    display: flex;
+    
+   }
+
+   .sidenav ul li{
+    flex: 1 0 60px;
+   }
+
+   .sidenav{
+    padding: 0 30px;
+   }
+
+   .sidenav li a {
+    margin-top: 30px;
+   }
+
+  }

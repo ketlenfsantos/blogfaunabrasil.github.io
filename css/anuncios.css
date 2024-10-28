@@ -1,0 +1,11 @@
+.anuncios{
+    grid-area: anuncios;
+    display: grid;
+    align-content: start ;
+    padding: 30px;
+    grid-gap: 30px;
+    margin-top: 20px;
+    /* autofit: tenta colocar o maximo de coluna q der de acordo com a especificação */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  

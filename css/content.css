@@ -1,0 +1,140 @@
+.content{
+ 
+    grid-area: content;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:22px;
+  }
+  .col-wide{
+    grid-column: 1 / -1;
+  }
+
+  .img1{ 
+    /* expandir por 2 linhas */
+    grid-row: span 2; 
+    align-self: flex-end;
+    height: 435px;
+    margin-bottom: -25px;
+  }
+
+  .img2{
+   margin-bottom: -25px;
+  }
+
+
+ p{
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;  
+  color: rgba(0, 0, 0, .6)
+ }
+
+
+
+ .informações .p1{
+    margin-top: 10px;
+ }
+
+ .titulo h1{
+    font-family: "Black Han Sans", sans-serif;
+    color: rgb(0, 146, 69);
+    letter-spacing: 0.009em;
+ }
+
+ .titulo p{
+    font-size: 0.875em;
+    font-style: italic;
+ }
+
+ /* CARACTERISTICAS DIV */
+
+ .caracteristicas{
+    display: flex;
+    align-items: flex-start;
+
+ }
+
+ .caracteristicas span {
+    display: block;
+ }
+
+ /* falar com as divs q tao dentro */
+ .caracteristicas > div {
+    width: 80px;
+    text-align: center;
+    background:  #fff5e3;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(6, 49, 17, 0.53);
+    position: relative;
+
+ }
+
+ .caracteristicas > div:first-child{
+    margin-right: 30px;
+ }
+
+ .numero {
+    color: green;
+    font-size: 3em;
+    line-height: 1;
+    margin: 10px auto;
+ }
+
+ .rotulo{
+    background: white;
+    border-radius: 0 0 5px 5px;
+    color: green;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
+ }
+
+ .destaque{
+    font-size: 0.875em;
+    color: green;
+
+ }
+
+ .citação, .atributos { 
+    align-self: start;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 0px rgba(255, 189, 9, 0.345);
+    background: rgba(0, 128, 0, 0.167);
+    
+ }
+
+ .citação {
+    display: flex;
+ }
+ .citação p{
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+
+}
+
+.atributos li {
+    font-family: Courier, monospace;
+    font-size: 1.2em;
+    padding: 1.125em;
+    border-bottom: 2px solid #fff5e3;
+}
+
+.pultimo{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+
+@media (max-width:600px){
+   .content {
+      grid-template-columns: auto ;
+
+   }
+}

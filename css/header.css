@@ -1,0 +1,67 @@
+@import './header.css';
+
+.header{
+    grid-area: header;
+    background: #fff5e3;
+    padding: 20px 35px;
+    
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .logo{
+    max-width: 200px;
+    padding-left: 60px;
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-right: 10px;
+   
+   
+    
+  }
+
+  .header nav a {
+    display: block;
+    padding: 10px;
+    color: green;
+    font-size: 1.125rem;
+    transition: .2s;
+   
+    
+  }
+
+  .header nav a:hover{
+    color: rgb(246, 207, 8);
+    
+  }
+
+  @media (max-width: 760px)
+  {
+    .header{
+      grid-template-columns: auto;
+      align-items: center;
+    }
+
+    .logo{
+      margin-bottom: 20px;
+      margin: auto;
+    }
+
+    .header nav a {
+      font-size: 1em;
+      
+    }
+
+    .header nav ul{
+      gap: 15px;
+      display: flex;
+      justify-content: center;
+      margin-top: 18px;
+      margin-left: 58px;
+    }
+  }
